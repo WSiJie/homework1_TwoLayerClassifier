@@ -63,3 +63,30 @@ myModel = NN_Loading(bestModel_parameterFileName)
 # 测试模型
 myModel.test(testData)
 ```
+
+### 备注
+上面的模型使用中的五个步骤并不是必须连贯的。可以分为：
+
+1、读取数据+随机生成模型并存储；
+2、读取数据+在模型仓库中挑选最优模型+加载模型+测试模型
+
+这两大功能，如果只想使用其中一项功能只需注释掉其他功能相应代码即可。
+
+## 最优模型结果
+最优模型参数选择结果为：learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39
+
+Loss曲线、Accuracy曲线、W1可视化、b1可视化、W2可视化、b2可视化结果依次如下：
+
+![loss](ImageOfLA_Store/Accuracy图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
+
+![accuracy](ImageOfLA_Store/Loss图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
+
+![layer1_weights](ImageOfParameter_Store/W1灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
+
+![layer1_biases](ImageOfParameter_Store/b1灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
+
+![layer2_weights](ImageOfParameter_Store/W2灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
+
+![layer2_biases](ImageOfParameter_Store/b2灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
+
+在测试集上的识别准确率为: 97.61%
