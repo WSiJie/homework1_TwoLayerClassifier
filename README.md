@@ -18,20 +18,27 @@ Github地址：[构建两层神经网络分类器 (github.com)](https://github.c
 存于Code目录中：
 
 1、DataProcessing.py负责处理原始MINIST数据集，使其结构便于神经网络模型训练与预测。对其原始训练集按照5:1的方式拆分为训练集和验证集，以便完成神经网路模型的训练与调参；
+
 2、Layer.py中从参数初始化、前向传播、反向传播、参数更新、参数保存、参数加载、计算Loss的角度，构造了神经网络的全连接层、ReLU激活函数层、Softmax激活函数层；
+
 3、NeuralNetwork.py构建了具体应用于MINIST数据集的两层神经网络结构，包括网络构建、参数初始化、前向传播、反向传播、参数更新、参数保存、参数加载、绘制Loss/Accuracy曲线、模型训练、模型测试等功能；
+
 4、main.py是主程序，负责读取数据集、随机生成一系列不同参数的神经网络模型并进行训练、挑选模型仓库中的最好模型、加载模型、测试模型等功能。
 
 ### 模型输出
 存于DataOfLA_Store、ImageOfLA_Store、ImageOfParameter_Store、Parameter_Store四个目录中：
 
 1、DataOfLA_Store存储各个神经网络模型的Loss和Accuracy曲线原始数据
+
 2、ImageOfLA_Store存储各个神经网络的Loss和Accuracy曲线图像
+
 3、ImageOfParameter_Store存储各个神经网络的参数可视化图像
+
 4、Parameter_Store存储各个神经网络的参数
 
 ## 模型使用
 运行main.py
+
 相关代码功能说明：
 
 ### 读取数据
@@ -68,6 +75,7 @@ myModel.test(testData)
 上面的模型使用中的五个步骤并不是必须连贯的。可以分为：
 
 1、读取数据+随机生成模型并存储；
+
 2、读取数据+在模型仓库中挑选最优模型+加载模型+测试模型
 
 这两大功能，如果只想使用其中一项功能只需注释掉其他功能相应代码即可。
