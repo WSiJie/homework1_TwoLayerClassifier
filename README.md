@@ -1,7 +1,7 @@
 # homework1_TwoLayerClassifier
 《神经网络和深度学习》_第一次作业：构建两层神经网络
 
-  汪思杰 21210980016
+ 作者：汪思杰 21210980016
 
 Github地址：[构建两层神经网络分类器 (github.com)](https://github.com/WSiJie/homework1_TwoLayerClassifier)
 
@@ -74,19 +74,5 @@ myModel.test(testData)
 
 ## 最优模型结果
 最优模型参数选择结果为：learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39
-
-Loss曲线、Accuracy曲线、W1可视化、b1可视化、W2可视化、b2可视化结果依次如下：
-
-![loss](ImageOfLA_Store/Accuracy图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
-
-![accuracy](ImageOfLA_Store/Loss图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
-
-![layer1_weights](ImageOfParameter_Store/W1灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
-
-![layer1_biases](ImageOfParameter_Store/b1灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
-
-![layer2_weights](ImageOfParameter_Store/W2灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
-
-![layer2_biases](ImageOfParameter_Store/b2灰度图像，learningRate=0.0445, hiddenNodes=73, lam=0.02, decayRate=0.91, decaySteps=4012, decayLimitRatio=0.39.jpg)
 
 在测试集上的识别准确率为: 97.61%
